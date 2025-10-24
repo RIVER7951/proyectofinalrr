@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="personajes">
+  <link rel="icon" href="https://i.postimg.cc/KYwqYK7C/logo-unsc.png" type="image/png">
+  <title>Personajes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="personajes">
+  <audio id="background-audio" autoplay loop>
+    <source src="sonidos/Voicy_Halo 3_ ODST.mp3" type="audio/mpeg">
+  </audio>
+
+  <aside class="sidebar">
+    <audio id="logo-sound" preload="auto">
+      <source src="sonidos/Voicy_AAAAWUBADUGH.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="sidebar-header">
+      <img src="https://i.postimg.cc/pr6pNHMp/anillo.jpg" alt="logo" id="main-logo">
+      <h2>Universo Halo</h2>
+    </div>
+    <ul class="sidebar-links">
+      <h4>Conoce los misterios del universo</h4>
+      <li><a href="index.html"><span class="material-symbols-outlined">home</span>Inicio</a></li>
+      <li><a href="personajes.html" class="active"><span class="material-symbols-outlined">person</span>Personajes</a></li>
+      <li><a href="facciones.html"><span class="material-symbols-outlined">group</span>Facciones</a></li>
+    </ul>
+    <div class="user-account">
+      <div class="user-profile">
+        <img src="https://i.postimg.cc/KYwqYK7C/logo-unsc.png" alt="perfil">
+        <div class="user-detail">
+          <h3>Ramon Rivera</h3>
+          <span>Creador</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <h1>Personajes Clave de Halo</h1>
+
+    <section class="personaje">
+      <h2>Master Chief John-117</h2>
+      <p><strong>Rol:</strong> Supersoldado Spartan-II, símbolo de esperanza para la humanidad.</p>
+      <p><strong>Historia:</strong> Reclutado a los 6 años para el programa Spartan, ha liderado numerosas batallas contra el Covenant y Flood. Su identidad es un misterio para muchos, pero su valor es legendario.</p>
+      <p><strong>Habilidades:</strong> Combate cuerpo a cuerpo, pilotaje, tácticas avanzadas y resistencia sobrehumana.</p>
+      <blockquote>“En la oscuridad, la esperanza es la luz más brillante” 
+      <strong>Master Chief</strong></blockquote>
+    </section>
+
+    <section class="personaje">
+      <h2>Cortana</h2>
+      <p><strong>Rol:</strong> Inteligencia Artificial avanzada diseñada para asistir en combate y estrategias.</p>
+      <p><strong>Historia:</strong> Creada con la mente de la Dra. Halsey, Cortana ha sido una compañera inseparable de Master Chief, ayudando en misiones críticas y decisiones tácticas.</p>
+      <p><strong>Habilidades:</strong> Hackeo, análisis de datos en tiempo real, comunicación avanzada.</p>
+      <blockquote>“No le hagas promesas a una chica, si sabes que no puedes cumplirlas” 
+      <strong>Cortana</strong></blockquote>
+    </section>
+
+    <section class="personaje">
+      <h2>Inquisidor Thel 'Vadam</h2>
+      <p><strong>Rol:</strong> Líder guerrero de The Covenant, más tarde aliado de la humanidad.</p>
+      <p><strong>Historia:</strong> Inicialmente un herético dentro del Covenant, fue redimido y jugó un papel crucial en la lucha contra el Flood y la destrucción de los anillos Halo.</p>
+      <p><strong>Habilidades:</strong> Combate experto, liderazgo y conocimiento profundo de la tecnología Forerunner.</p>
+      <blockquote>"La guerra, nunca cambia, No importa una gran victoria en la tierra, sino una gran derrota en el espacio” 
+      <strong>Inquisidor</strong></blockquote>
+    </section>
+  </main>
+
+   <script>
+    const logoSound = document.getElementById("logo-sound");
+    const mainLogo = document.getElementById("main-logo");
+
+    function playLogoSound() {
+      logoSound.currentTime = 0;
+      logoSound.play();
+    }
+
+    mainLogo.addEventListener("mouseenter", playLogoSound);
+  </script>
+
+</body>
+</html>

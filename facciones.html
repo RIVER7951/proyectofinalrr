@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="facciones">
+  <link rel="icon" href="https://i.postimg.cc/KYwqYK7C/logo-unsc.png" type="image/png">
+  <title>Facciones</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="facciones">
+  <audio id="background-audio" autoplay loop>
+    <source src="sonidos/Voicy_halo reach firefigt.mp3" type="audio/mpeg">
+  </audio>
+  <aside class="sidebar">
+    <audio id="logo-sound" preload="auto">
+      <source src="sonidos/Voicy_Game Over.mp3" type="audio/mpeg">
+    </audio>
+    <div class="sidebar-header">
+      <img src="https://i.postimg.cc/pr6pNHMp/anillo.jpg" alt="logo" id="main-logo">
+      <h2>Universo Halo</h2>
+    </div>
+    <ul class="sidebar-links">
+      <h4>Conoce los misterios del universo</h4>
+      <li><a href="index.html"><span class="material-symbols-outlined">home</span>Inicio</a></li>
+      <li><a href="personajes.html"><span class="material-symbols-outlined">person</span>Personajes</a></li>
+      <li><a href="facciones.html" class="active"><span class="material-symbols-outlined">group</span>Facciones</a></li>
+    </ul>
+    <div class="user-account">
+      <div class="user-profile">
+        <img src="https://i.postimg.cc/KYwqYK7C/logo-unsc.png" alt="perfil">
+        <div class="user-detail">
+          <h3>Ramon Rivera</h3>
+          <span>Creador</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <h1>Facciones Principales en Halo</h1>
+
+    <blockquote>"Ya habrá otra ocasión, Los Spartans nunca mueren, sólo desaparecen en combate"
+    <strong>Dra Halsey</strong>
+    </blockquote>
+
+    <section class="faccion">
+      <h2>UNSC (United Nations Space Command)</h2>
+      <p>La principal fuerza militar humana encargada de proteger la Tierra y colonias humanas. Cuenta con tecnología avanzada y soldados especializados como los Spartan.</p>
+      <p><strong>Líderes destacados:</strong> Comandante Miranda Keyes, Capitán Jacob Keyes.</p>
+      <p><strong>Motivación:</strong> Preservar la humanidad y detener amenazas alienígenas.</p>
+    </section>
+
+    <section class="faccion">
+      <h2>The Covenant</h2>
+      <p>Coalición de razas alienígenas unidas por una religión basada en los Forerunners y los anillos Halo. Buscan activar los anillos, creyendo que es un camino hacia la salvación.</p>
+      <p><strong>Líderes destacados:</strong> Profeta del Pesar, Profeta de la Verdad.</p>
+      <p><strong>Motivación:</strong> Expansión religiosa y dominación.</p>
+    </section>
+
+    <section class="faccion">
+      <h2>Flood</h2>
+      <p>Parásitos alienígenas capaces de infectar y controlar organismos vivos. Representan una amenaza biológica que busca consumir toda vida inteligente.</p>
+      <p><strong>Origen:</strong> Son una forma de vida antigua con inteligencia colectiva.</p>
+      <p><strong>Motivación:</strong> Expansión y supervivencia a costa de otras especies.</p>
+    </section>
+</main>
+
+<script>
+    const logoSound = document.getElementById("logo-sound");
+    const mainLogo = document.getElementById("main-logo");
+
+    function playLogoSound() {
+      logoSound.currentTime = 0;
+      logoSound.play();
+    }
+
+    mainLogo.addEventListener("mouseenter", playLogoSound);
+  </script>
+
+</body>
+</html>
