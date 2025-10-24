@@ -238,11 +238,19 @@ footer p {
 @media (max-width: 768px) {
   body {
     margin-left: 60px;
+    background-attachment: scroll;
   }
+
+  main {
+    padding: 1rem 1.5rem;
+    max-width: 100%;
+  }
+
   .sidebar {
     width: 60px;
     padding: 0.5rem 0;
   }
+
   .sidebar-header h2,
   .sidebar-links h4,
   .sidebar-links a span:not(.material-symbols-outlined),
@@ -250,11 +258,49 @@ footer p {
   .user-detail span {
     display: none;
   }
+
   .sidebar-links a {
     justify-content: center;
     padding: 10px 0;
+    font-size: 1.2rem;
   }
+
+  .sidebar-links li:hover {
+    transform: none;
+  }
+
   .user-account {
     justify-content: center;
+    padding: 10px 0;
+  }
+
+  blockquote {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .sidebar-header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-profile img {
+    width: 40px;
+    height: 40px;
   }
 }
